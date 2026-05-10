@@ -43,15 +43,15 @@
   - 實作：[TwinkleAI 版 Notebook](ch4/Chapter_4_Text_Classification_twinkle.ipynb)
   - 資源：[簡報](ch4/Twinkle-llm-book-ch4-slide.pdf) | [Notebook](ch4/Chapter%204%20-%20Text%20Classification.ipynb) | [TwinkleAI 版 Notebook](ch4/Chapter_4_Text_Classification_twinkle.ipynb)
 
-- [ ] **Chapter 5: 文本分群與主題建模 (Text Clustering and Topic Modeling)**
+- [x] **Chapter 5: 文本分群與主題建模 (Text Clustering and Topic Modeling)**
   - 日期：2026-05-10
   - 內容：跳脫需要大量標記資料的框架，運用語言模型在海量且未標記的文本中，自動找出潛藏的結構與主題。
     - **文本分群的經典三部曲**：嵌入文件 (Embed documents)、利用 UMAP 進行降維 (Dimensionality Reduction)、以 HDBSCAN 密度分群演算法自動找出語意相似群體並過濾離群值 (Outliers)。
     - **BERTopic：主題建模的樂高積木**：透過基於類別的 TF-IDF (c-TF-IDF) 萃取代表性關鍵字，並以高度模組化設計自由抽換嵌入模型、降維套件與分群演算法。
     - **重新排序：升級你的主題表示法**：以 KeyBERTInspired 利用餘弦相似度提取最具語意代表性的詞彙，並透過最大邊際相關性 (MMR) 消除關鍵字冗餘、確保多樣性。
     - **生成式 AI 神助攻**：結合 Flan-T5 或 GPT-3.5 與提示工程，將代表性文件與初始關鍵字餵給 LLM，自動生成精準且高可讀性的主題標籤。
-  - 實作：（待更新）
-  - 資源：[Notebook](Hands-On-Large-Language-Models/ch5/Chapter%205%20-%20Text%20Clustering%20and%20Topic%20Modeling.ipynb)
+  - 實作：[TwinkleAI 版 Notebook](Hands-On-Large-Language-Models/ch5/Chapter_5_Text_Clustering_and_Topic_Modeling-twinkle.ipynb)
+  - 資源：[簡報](Hands-On-Large-Language-Models/ch5/Twinkle-llm-book-ch5.pdf) | [Notebook](Hands-On-Large-Language-Models/ch5/Chapter%205%20-%20Text%20Clustering%20and%20Topic%20Modeling.ipynb) | [TwinkleAI 版 Notebook](Hands-On-Large-Language-Models/ch5/Chapter_5_Text_Clustering_and_Topic_Modeling-twinkle.ipynb)
 
 > 後續章節將每週持續更新...
 
