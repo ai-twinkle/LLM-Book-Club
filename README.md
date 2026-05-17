@@ -53,15 +53,15 @@
   - 實作：[TwinkleAI 版 Notebook](Hands-On-Large-Language-Models/ch5/Chapter_5_Text_Clustering_and_Topic_Modeling-twinkle.ipynb)
   - 資源：[簡報](Hands-On-Large-Language-Models/ch5/Twinkle-llm-book-ch5.pdf) | [Notebook](Hands-On-Large-Language-Models/ch5/Chapter%205%20-%20Text%20Clustering%20and%20Topic%20Modeling.ipynb) | [TwinkleAI 版 Notebook](Hands-On-Large-Language-Models/ch5/Chapter_5_Text_Clustering_and_Topic_Modeling-twinkle.ipynb)
 
-- [ ] **Chapter 6: 提示工程 (Prompt Engineering)**
+- [x] **Chapter 6: 提示工程 (Prompt Engineering)**
   - 日期：2026-05-17
   - 內容：直擊 LLM 核心，解密提示工程的關鍵技巧，從基礎指令到複雜邏輯推理，全面掌握引導模型產出高品質結果的訣竅。
     - **駕馭隨機與創造力**：精準微調 Temperature 與 Top_p 參數，完美平衡模型輸出的穩定性與創意。
     - **模組化 Prompt 框架**：靈活運用 Persona、Context、Format 與 Tone 四大元素，打造專業級指令。
     - **喚醒 System 2 邏輯推理**：掌握 In-Context Learning 範例引導，並運用 CoT（思維鏈）與 ToT（思維樹）帶領模型攻克複雜難題。
     - **輸出驗證與格式約束**：學習引導結構化輸出（JSON）及受限採樣（Constrained Sampling）的底層防呆機制，確保 Production 環境穩定運行。
-  - 實作：（待更新）
-  - 資源：（待更新）
+  - 實作：[TwinkleAI 版 Notebook](Hands-On-Large-Language-Models/ch6/Chapter%206%20-%20Prompt%20Engineering-twinkle.ipynb)
+  - 資源：[簡報](Hands-On-Large-Language-Models/ch6/Twinkle-llm-book-ch6.pdf) | [Notebook](Hands-On-Large-Language-Models/ch6/Chapter%206%20-%20Prompt%20Engineering.ipynb) | [TwinkleAI 版 Notebook](Hands-On-Large-Language-Models/ch6/Chapter%206%20-%20Prompt%20Engineering-twinkle.ipynb)
 
 > 後續章節將每週持續更新...
 

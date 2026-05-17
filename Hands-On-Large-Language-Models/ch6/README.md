@@ -4,7 +4,7 @@
 
 - **日期：** 2026-05-17
 - **內容：** 直擊 LLM 核心，解密提示工程的關鍵技巧，從基礎指令到複雜邏輯推理，全面掌握引導模型產出高品質結果的訣竅。
-- **實作：** [官方 Notebook](Chapter%206%20-%20Prompt%20Engineering.ipynb)
+- **實作：** [TwinkleAI 版 Notebook](Chapter%206%20-%20Prompt%20Engineering-twinkle.ipynb)
 
 ## 本章重點
 
@@ -35,4 +35,4 @@
 
 ## 資源
 
-- [官方 Notebook](Chapter%206%20-%20Prompt%20Engineering.ipynb)
+- [簡報](Twinkle-llm-book-ch6.pdf) | [Notebook](Chapter%206%20-%20Prompt%20Engineering.ipynb) | [TwinkleAI 版 Notebook](Chapter%206%20-%20Prompt%20Engineering-twinkle.ipynb)
