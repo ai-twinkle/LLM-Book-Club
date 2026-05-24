@@ -63,6 +63,14 @@
   - 實作：[TwinkleAI 版 Notebook](Hands-On-Large-Language-Models/ch6/Chapter%206%20-%20Prompt%20Engineering-twinkle.ipynb)
   - 資源：[簡報](Hands-On-Large-Language-Models/ch6/Twinkle-llm-book-ch6.pdf) | [Notebook](Hands-On-Large-Language-Models/ch6/Chapter%206%20-%20Prompt%20Engineering.ipynb) | [TwinkleAI 版 Notebook](Hands-On-Large-Language-Models/ch6/Chapter%206%20-%20Prompt%20Engineering-twinkle.ipynb)
 
+- [x] **Chapter 7: 進階文本生成技術與工具 (Advanced Text Generation Techniques and Tools)**
+  - 日期：2026-05-24
+  - 內容：超越提示工程，深入探索 LLM 應用開發的三大核心支柱，學習如何將語言模型整合進複雜的工作流程。
+    - **載入與串接 LLM（Chains）**：掌握如何載入本地或雲端 LLM，並透過 Chain 架構將多個模型或處理步驟串接成自動化流水線，實現 Multiple Chains 的複雜邏輯組合。
+    - **對話記憶管理（Memory）**：比較三種主流記憶策略——完整保留上下文的 ConversationBuffer、以滑動視窗控制記憶長度的 ConversationBufferMemoryWindow，以及以摘要壓縮歷史對話的 ConversationSummary，在效能與成本間取得平衡。
+    - **自主行動的 Agent**：讓 LLM 自主決策、選用工具、執行多步驟任務，理解 Agent 的運作循環與工具呼叫機制，打造能與外部世界互動的智慧代理。
+  - 資源：[簡報](Hands-On-Large-Language-Models/ch7/Twinkle-llm-book-ch7.0.0.pdf) | [Notebook](Hands-On-Large-Language-Models/ch7/Chapter%207%20-%20Advanced%20Text%20Generation%20Techniques%20and%20Tools.ipynb)
+
 > 後續章節將每週持續更新...
 
 ## 🚀 Getting Started (如何開始實作)
