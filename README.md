@@ -71,6 +71,15 @@
     - **自主行動的 Agent**：讓 LLM 自主決策、選用工具、執行多步驟任務，理解 Agent 的運作循環與工具呼叫機制，打造能與外部世界互動的智慧代理。
   - 資源：[簡報](Hands-On-Large-Language-Models/ch7/Twinkle-llm-book-ch7.0.0.pdf) | [Notebook](Hands-On-Large-Language-Models/ch7/Chapter%207%20-%20Advanced%20Text%20Generation%20Techniques%20and%20Tools.ipynb)
 
+- [x] **Chapter 8: 語意搜尋與檢索增強生成 (Semantic Search and Retrieval-Augmented Generation)**
+  - 日期：2026-06-07
+  - 內容：深入探索 LLM 的關鍵能力——搜尋與檢索，學習如何讓語言模型根據外部知識庫生成有據可查的答案。
+    - **稠密檢索（Dense Retrieval）**：將文字區塊轉換為高維向量表示，建立 FAISS 索引，透過餘弦相似度實現超越關鍵字的語意層次匹配。
+    - **詞彙搜尋 vs. 語意搜尋**：比較基於詞頻的傳統 BM25 稀疏檢索與利用嵌入模型捕捉語意相似性的稠密檢索，分析各自的優劣與適用場景。
+    - **重排序（Reranking）**：以兩階段架構先快速召回候選文件，再以交叉編碼器（Cross-Encoder）精準重排序，並結合混合搜尋（Hybrid Search）取得最佳檢索結果。
+    - **檢索增強生成（RAG）**：掌握 RAG 核心流程——檢索相關文件片段 → 注入提示詞 → 生成有引用依據的回答，並實作結合 LlamaCpp、HuggingFace 嵌入模型與 FAISS 的完全離線本地 RAG 管線。
+  - 資源：[簡報](Hands-On-Large-Language-Models/ch8/Twinkle-llm-book-ch8.pdf) | [Notebook](Hands-On-Large-Language-Models/ch8/Chapter%208%20-%20Semantic%20Search.ipynb)
+
 > 後續章節將每週持續更新...
 
 ## 🚀 Getting Started (如何開始實作)
