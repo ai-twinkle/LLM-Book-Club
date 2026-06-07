@@ -86,7 +86,7 @@
     - **CLIP（對比式語言-圖像預訓練）**：將圖像與文字映射至同一向量空間，實現跨模態的語意相似度比較；透過餘弦相似度衡量圖像與描述之間的關聯程度，支援零樣本圖像分類；並結合 SBERT 強化文字端的語意表示能力。
     - **BLIP-2（語言-圖像預訓練 2）**：涵蓋「圖像描述生成（Image Captioning）」與「視覺問答（Visual Question Answering）」兩大應用情境——前者讓模型依據輸入圖像自動生成自然語言描述，後者則結合圖像與問題文字進行跨模態推理。
     - **多模態前處理**：使用處理器將原始圖像轉換為模型可接受的張量格式，並將問題文字 tokenize 後與圖像特徵一同輸入模型。
-  - 資源：[簡報](Hands-On-Large-Language-Models/ch9/Twinkle-llm-book-ch9.pdf) | [Notebook](Hands-On-Large-Language-Models/ch9/Chapter%209%20-%20Multimodal%20Large%20Language%20Models.ipynb)
+  - 資源：[簡報](Hands-On-Large-Language-Models/ch9/Twinkle-llm-book-ch9.pdf) | [Notebook](Hands-On-Large-Language-Models/ch9/Chapter_9_Multimodal_Large_Language_Models.ipynb)
 
 > 後續章節將每週持續更新...
 
