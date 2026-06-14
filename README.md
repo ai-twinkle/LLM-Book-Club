@@ -88,6 +88,17 @@
     - **多模態前處理**：使用處理器將原始圖像轉換為模型可接受的張量格式，並將問題文字 tokenize 後與圖像特徵一同輸入模型。
   - 資源：[簡報](Hands-On-Large-Language-Models/ch9/Twinkle-llm-book-ch9.pdf) | [Notebook](Hands-On-Large-Language-Models/ch9/Chapter_9_Multimodal_Large_Language_Models.ipynb)
 
+- [x] **Chapter 10: 建立文字嵌入模型 (Creating Text Embedding Models)**
+  - 日期：2026-06-14
+  - 內容：深入探索文字嵌入模型的訓練與微調方法，涵蓋多種損失函數策略與無監督學習技術。
+    - **建立嵌入模型（Creating an Embedding Model）**：使用 GLUE MNLI 資料集（含蘊含、中立、矛盾三類標籤），以 `bert-base-uncased` 作為 SentenceTransformer 基底，並以 STS-B 驗證集評估嵌入品質。
+    - **損失函數（Loss Functions）**：比較三種主流損失函數——多分類導向的 Softmax Loss、以餘弦相似度為目標的 Cosine Similarity Loss，以及適合僅有正例場景的 Multiple Negatives Ranking Loss。
+    - **MTEB（大規模文字嵌入基準測試）**：透過 MTEB（Massive Text Embedding Benchmark）在分類、聚類、語意搜尋等多種下游任務上系統性評估嵌入模型表現。
+    - **監督式微調（Supervised Fine-tuning）**：以有標記的 NLI 資料直接微調預訓練嵌入模型，快速適應目標任務。
+    - **Augmented SBERT**：以 Cross-Encoder 擴充訓練資料的五步驟流程——微調 Cross-Encoder、生成候選句子對、產生銀標資料、訓練 Bi-Encoder，最後對比基線評估。
+    - **無監督學習（Unsupervised Learning）**：以 TSDAE（Transformer-based Denoising AutoEncoder）對輸入句子加入雜訊後要求模型重建原句，在無標記資料上學習高品質句子表示。
+  - 資源：[簡報](Hands-On-Large-Language-Models/ch10/Chapter%2010.pdf) | [Marimo Notebook](Hands-On-Large-Language-Models/ch10/Chapter_10_Creating_Text_Embedding_Models.py) | [線上版 Notebook](https://molab.marimo.io/notebooks/nb_WArp2vmVRgN2RfwdQu9p1Z)
+
 > 後續章節將每週持續更新...
 
 ## 🚀 Getting Started (如何開始實作)
