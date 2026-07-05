@@ -99,6 +99,15 @@
     - **無監督學習（Unsupervised Learning）**：以 TSDAE（Transformer-based Denoising AutoEncoder）對輸入句子加入雜訊後要求模型重建原句，在無標記資料上學習高品質句子表示。
   - 資源：[簡報](Hands-On-Large-Language-Models/ch10/Chapter%2010.pdf) | [Marimo Notebook](Hands-On-Large-Language-Models/ch10/Chapter_10_Creating_Text_Embedding_Models.py) | [線上版 Notebook](https://molab.marimo.io/notebooks/nb_WArp2vmVRgN2RfwdQu9p1Z)
 
+- [x] **Chapter 11: 微調表示型模型 (Fine-Tuning Representation Models)**
+  - 日期：2026-06-28
+  - 內容：深入探索如何微調 BERT 系列的表示型模型，涵蓋監督式分類、層凍結策略、少樣本學習、遮罩語言建模與命名實體辨識等任務。
+    - **監督式分類**：以 `rotten_tomatoes` 資料集微調 `bert-base-cased`，並比較凍結分類頭、凍結前 9 層編碼器區塊與全參數微調三種策略對 F1 分數的影響。
+    - **少樣本分類（SetFit）**：以 `sentence-transformers/all-mpnet-base-v2` 為基底，每類別僅取樣 16 筆資料，透過對比學習訓練分類頭，大幅降低對標記資料的需求。
+    - **遮罩語言建模（MLM）**：以 15% 機率遮罩 token 對 `bert-base-cased` 進行領域持續預訓練，並透過 `fill-mask` pipeline 比較適應前後的填空結果。
+    - **命名實體辨識（NER）**：使用 CoNLL-2003 資料集，將 subword token 對齊回原始詞彙標籤，訓練 `AutoModelForTokenClassification` 並以 `seqeval` 評估 F1 分數。
+  - 資源：[簡報](Hands-On-Large-Language-Models/ch11/TwinkleAI%20Ch11%20Deck.pdf) | [Notebook](Hands-On-Large-Language-Models/ch11/Chapter%2011%20-%20Fine-Tuning%20BERT.ipynb) | [章節說明](Hands-On-Large-Language-Models/ch11/README.md)
+
 - [x] **Chapter 12: 微調生成模型 (Fine-tuning Generation Models)**
   - 日期：2026-07-05
   - 內容：探索以兩階段方法微調生成式大型語言模型，先透過監督式微調學會指令跟隨，再以偏好對齊技術讓輸出更貼近人類偏好。
