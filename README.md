@@ -99,6 +99,15 @@
     - **無監督學習（Unsupervised Learning）**：以 TSDAE（Transformer-based Denoising AutoEncoder）對輸入句子加入雜訊後要求模型重建原句，在無標記資料上學習高品質句子表示。
   - 資源：[簡報](Hands-On-Large-Language-Models/ch10/Chapter%2010.pdf) | [Marimo Notebook](Hands-On-Large-Language-Models/ch10/Chapter_10_Creating_Text_Embedding_Models.py) | [線上版 Notebook](https://molab.marimo.io/notebooks/nb_WArp2vmVRgN2RfwdQu9p1Z)
 
+- [x] **Chapter 12: 微調生成模型 (Fine-tuning Generation Models)**
+  - 日期：2026-07-05
+  - 內容：探索以兩階段方法微調生成式大型語言模型，先透過監督式微調學會指令跟隨，再以偏好對齊技術讓輸出更貼近人類偏好。
+    - **監督式微調（SFT）**：使用 `HuggingFaceH4/ultrachat_200k` 資料集與 TinyLlama 聊天模板格式化訓練樣本，以 `BitsAndBytesConfig` 進行 4-bit（QLoRA）量化載入，並搭配 LoRA（`r=64`、`lora_alpha=32`）微調注意力與前饋層。
+    - **合併與推論**：訓練完成後以 `merge_and_unload` 將 LoRA adapter 與基底模型合併，並測試微調後的指令跟隨生成效果。
+    - **偏好調校（DPO）**：使用 `argilla/distilabel-intel-orca-dpo-pairs` 資料集，過濾出高品質的 prompt / chosen / rejected 三元組，透過 `DPOTrainer` 以 `beta=0.1` 控制偏好對齊強度，在 SFT 模型基礎上持續訓練。
+    - **成果比較**：儲存偏好對齊後的 adapter，並與 SFT 階段的生成結果進行比較，觀察偏好調校對輸出品質的影響。
+  - 資源：[簡報](Hands-On-Large-Language-Models/ch12/Twinkle-llm-book-ch12.pdf) | [Notebook](Hands-On-Large-Language-Models/ch12/Chapter%2012%20-%20Fine-tuning%20Generation%20Models.ipynb) | [章節說明](Hands-On-Large-Language-Models/ch12/README.md)
+
 > 後續章節將每週持續更新...
 
 ## 🚀 Getting Started (如何開始實作)
